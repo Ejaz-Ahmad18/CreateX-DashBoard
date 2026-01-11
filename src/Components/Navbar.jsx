@@ -1,4 +1,7 @@
 import { FiSearch, FiBell, FiChevronDown } from "react-icons/fi";
+import { FiSun, FiMoon } from "react-icons/fi";
+import useTheme from "../Hooks/useTheme";
+
 
 const Navbar = () => {
   return (
