@@ -3,6 +3,22 @@ import Calendar from "./Calendar";
 import Graph from "../../Components/Graph";
 import ToDoList from "../../Components/ToDoList";
 
+const courses = [
+  {
+    title: "User Interface (UI) Design",
+    hours: "12.00hrs",
+    lessons: "08 Lessons",
+    assignments: "Assignments",
+    icon: "https://cdn-icons-png.flaticon.com/512/5968/5968705.png",
+  },
+  {
+    title: "Visual Design and Branding",
+    hours: "04.30hrs",
+    lessons: "03 Lessons",
+    assignments: "Assignments",
+    icon: "https://cdn-icons-png.flaticon.com/512/5968/5968672.png",
+  },
+];
 
 
 
@@ -24,41 +40,39 @@ const Dashboard = () => {
 </div>
 
       {/* Recently Joined */}
-     <h3 className="font-semibold text-gray-700 mb-4">
+ <h3 className="font-semibold text-gray-700 mb-4">
   Recently Joined Courses
 </h3>
 
 <div className="space-y-4">
-  <div className="flex items-center gap-4 p-3 rounded-lg border">
-    <div className="w-10 h-10 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center font-bold">
-      UI
-    </div>
+  {courses.map((course, index) => (
+    <div
+      key={index}
+      className="flex items-center gap-4 p-4 border rounded-xl hover:bg-gray-50 transition"
+    >
+      {/* Icon */}
+      <img
+        src={course.icon}
+        alt={course.title}
+        className="w-10 h-10 rounded-lg"
+      />
 
-    <div className="flex-1">
-      <p className="text-sm font-medium">
-        User Interface Design
-      </p>
-      <p className="text-xs text-gray-400">
-        12 hours • 8 lessons
-      </p>
-    </div>
-  </div>
+      {/* Content */}
+      <div className="flex-1">
+        <p className="text-sm font-medium text-gray-800">
+          {course.title}
+        </p>
 
-  <div className="flex items-center gap-4 p-3 rounded-lg border">
-    <div className="w-10 h-10 bg-pink-100 text-pink-600 rounded-lg flex items-center justify-center font-bold">
-      UX
+        <div className="flex gap-3 text-xs text-gray-400 mt-1">
+          <span>{course.hours}</span>
+          <span>{course.lessons}</span>
+          <span>{course.assignments}</span>
+        </div>
+      </div>
     </div>
-
-    <div className="flex-1">
-      <p className="text-sm font-medium">
-        Visual Design & Branding
-      </p>
-      <p className="text-xs text-gray-400">
-        8 hours • 6 lessons
-      </p>
-    </div>
-  </div>
+  ))}
 </div>
+
 
 
       {/* Graph */}
