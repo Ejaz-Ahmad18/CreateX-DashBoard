@@ -6,7 +6,7 @@ const DashboardCalendar = () => {
   const [date, setDate] = useState(new Date());
 
   return (
-    <div className="bg-white rounded-xl p-5 shadow">
+    <div className="bg-white rounded-xl p-5 shadow-sm">
       <h3 className="font-semibold text-gray-700 mb-3">
         Calendar
       </h3>

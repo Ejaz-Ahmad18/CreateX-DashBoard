@@ -52,9 +52,10 @@ const Sidebar = () => {
       </nav>
 
       {/* Footer (optional later) */}
-      <div className="mt-auto text-xs text-gray-400">
-        © 2026 CreateX
-      </div>
+      <div className="mt-auto text-xs text-gray-300 pt-6">
+  © 2026 CreateX
+</div>
+
     </aside>
   );
 };
