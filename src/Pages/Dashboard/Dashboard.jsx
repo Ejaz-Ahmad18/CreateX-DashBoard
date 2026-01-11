@@ -20,14 +20,11 @@ const Dashboard = () => {
       </div>
 
       {/* Calendar Card */}
-      <div className="col-span-4 bg-white rounded-xl p-5 shadow">
-        <h3 className="font-semibold text-gray-700 mb-2">
-          Calendar
-        </h3>
-        <p className="text-gray-400 text-sm">
-          October 2025
-        </p>
-      </div>
+     
+<div className="col-span-4">
+  <Calendar />
+</div>
+
 
       {/* Recently Joined */}
       <div className="col-span-4 bg-white rounded-xl p-5 shadow">
