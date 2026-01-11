@@ -1,5 +1,9 @@
 import Graph from "../../Components/Graph";
 import ToDoList from "../../Components/ToDoList";
+import Graph from "../../Components/Graph";
+import ToDoList from "../../Components/ToDoList";
+import Calendar from "./Calendar";
+
 
 const Dashboard = () => {
   return (
