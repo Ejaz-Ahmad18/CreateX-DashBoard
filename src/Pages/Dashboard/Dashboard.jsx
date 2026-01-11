@@ -19,10 +19,9 @@ const Dashboard = () => {
 
       {/* Calendar Card */}
      
-<div className="col-span-4">
+<div className="md:col-span-4 bg-white rounded-xl p-5 shadow-sm">
   <Calendar />
 </div>
-
 
       {/* Recently Joined */}
      <h3 className="font-semibold text-gray-700 mb-4">
