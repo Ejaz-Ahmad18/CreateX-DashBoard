@@ -11,15 +11,11 @@ const Dashboard = () => {
   return (
     <div className="grid grid-cols-12 gap-6">
       {/* Performance Card */}
-      <div className="col-span-4 bg-white rounded-xl p-5 shadow">
-        <h3 className="font-semibold text-gray-700 mb-2">
-          Performance
-        </h3>
-        <p className="text-3xl font-bold text-indigo-600">
-          8.966
-        </p>
-        <p className="text-sm text-gray-400">Your Grade</p>
-      </div>
+      {/* Performance */}
+<div className="col-span-4">
+  <Performance />
+</div>
+
 
       {/* Calendar Card */}
      
