@@ -9,7 +9,8 @@ import Performance from "./Performance";
 
 const Dashboard = () => {
   return (
-    <div className="grid grid-cols-12 gap-6">
+ <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
+
       {/* Performance Card */}
       {/* Performance */}
 <div className="col-span-4">
