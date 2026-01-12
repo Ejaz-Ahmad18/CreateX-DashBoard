@@ -21,3 +21,8 @@
 .card-title {
   @apply font-semibold text-gray-700 mb-4;
 }
+html,
+body {
+  height: 100%;
+  width: 100%;
+}

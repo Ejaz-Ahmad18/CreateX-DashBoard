@@ -1,40 +1,37 @@
 import { FiSearch, FiBell, FiChevronDown } from "react-icons/fi";
-import { FiSun, FiMoon } from "react-icons/fi";
-import useTheme from "../Hooks/useTheme";
-
 
 const Navbar = () => {
   return (
-    <header className="h-16 bg-white border-b px-6 flex items-center justify-between">
-      {/* Search */}
-      <div className="hidden sm:flex items-center gap-2 bg-gray-100 px-4 py-2 rounded-lg w-72">
-        <FiSearch className="text-gray-400" />
+    <header className="h-[64px] bg-[#F9FAFC] border-b border-gray-200 flex items-center justify-between px-[32px]">
+      {/* Left: Search */}
+      <div className="flex items-center gap-3 bg-white h-[40px] w-[320px] px-4 rounded-[10px] border border-gray-200">
+        <FiSearch className="text-gray-400 text-[16px]" />
         <input
           type="text"
           placeholder="Search..."
-          className="bg-transparent outline-none text-sm w-full"
+          className="w-full bg-transparent outline-none text-sm text-gray-600 placeholder-gray-400"
         />
       </div>
 
-      {/* Right Section */}
+      {/* Right: Actions */}
       <div className="flex items-center gap-6">
         {/* Notification */}
         <div className="relative">
-          <FiBell className="text-xl text-gray-600 cursor-pointer" />
-          <span className="absolute -top-1 -right-1 w-2.5 h-2.5 bg-red-500 rounded-full"></span>
+          <FiBell className="text-[18px] text-gray-600" />
+          <span className="absolute -top-1 -right-1 w-[8px] h-[8px] bg-red-500 rounded-full"></span>
         </div>
 
         {/* Profile */}
-        <div className="flex items-center gap-2 cursor-pointer">
+        <div className="flex items-center gap-2">
           <img
             src="https://i.pravatar.cc/40"
             alt="user"
-            className="w-8 h-8 rounded-full"
+            className="w-[32px] h-[32px] rounded-full"
           />
-          <span className="hidden sm:block text-sm font-medium">
+          <span className="text-sm font-medium text-gray-700">
             Abdallah
           </span>
-          <FiChevronDown className="text-gray-400" />
+          <FiChevronDown className="text-gray-400 text-[16px]" />
         </div>
       </div>
     </header>
